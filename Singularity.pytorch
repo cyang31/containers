@@ -47,6 +47,7 @@ pip install monai
 pip install torch
 pip install scikit-learn
 pip install nilearn
+pip install tqdm
 # SimpleITK
 pip install simpleitk
 

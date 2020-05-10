@@ -15,11 +15,11 @@ From: nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
     # which are useless now.
     rm -rf /var/lib/apt/lists/*
     # Install Python modules.
-    pip install torch
-    pip install numpy
-    pip install pandas
-    pip install matplotlib
-    pip install Pillow
-    pip install monai
-    pip install simpleitk
-    pip install comet_ml
+    pip3 install torch
+    pip3 install numpy
+    pip3 install pandas
+    pip3 install matplotlib
+    pip3 install Pillow
+    pip3 install monai
+    pip3 install simpleitk
+    pip3 install comet_ml

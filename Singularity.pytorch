@@ -1,8 +1,6 @@
 Bootstrap: docker
 From: tensorflow/tensorflow:1.13.1-gpu-py3
 
-# adapted from: https://github.com/marcc-hpc/tensorflow
-
 %environment
 # use bash as default shell
 SHELL=/bin/bash
@@ -45,7 +43,7 @@ apt-get install -y python3-scipy
 pip install Pillow
 pip install matplotlib
 pip install monai
-pip3 install torch
+pip install torch
 # SimpleITK
 pip install simpleitk
 
@@ -54,22 +52,6 @@ pip install comet_ml
 
 #pandas
 pip install pandas
-
-# for Xiaoxiao
-#pip install tables #pytables
-#pip install nilearn
-#pip install nibabel
-
-# TODO: SimpleElastix
-# git clone https://github.com/SuperElastix/SimpleElastix
-# mkdir SimpleElastix.build
-# cd SimpleElastix.build
-# #cmake ../SimpleElastix/SuperBuild
-# cmake -DWRAP_CSHARP:BOOL=OFF -DWRAP_JAVA:BOOL=OFF -DWRAP_LUA:BOOL=OFF -DWRAP_PYTHON:BOOL=ON -DWRAP_R:BOOL=OFF -DWRAP_RUBY:BOOL=OFF -DWRAP_TCL=BOOL=OFF ../SimpleElastix/SuperBuild
-# #make
-# make >/dev/null --jobs=4
-# cd SimpleITK-build/Wrapping/Python/Packaging
-# python setup.py --upgrade install
 
 %runscript
 # executes with the singularity run command

@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: marcchpc/pytorch_cuda9
+From: tensorflow/tensorflow:1.13.1-gpu-py3
 
 # adapted from: https://github.com/marcc-hpc/tensorflow
 
@@ -45,6 +45,7 @@ apt-get install -y python3-scipy
 pip install Pillow
 pip install matplotlib
 pip install monai
+pip3 install torch
 # SimpleITK
 pip install simpleitk
 

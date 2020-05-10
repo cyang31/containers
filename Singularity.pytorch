@@ -48,6 +48,8 @@ pip install torch
 pip install scikit-learn
 pip install nilearn
 pip install tqdm
+pip install h5py
+pip install pandas
 # SimpleITK
 pip install simpleitk
 

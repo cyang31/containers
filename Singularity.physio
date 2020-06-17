@@ -34,9 +34,9 @@ From: tensorflow/tensorflow:1.13.1-gpu-py3
   apt-get update && apt-get -y install locales
   locale-gen en_US.UTF-8
   apt-get install -y git wget
-  apt-get install -y python3-scipy
-  apt-get install python3-pip
-  pip3 install scipy scikit-learn scikit-image
+  #apt-get install -y python3-scipy
+  #apt-get install python3-pip
+  #pip3 install scipy scikit-learn scikit-image
   apt-get clean
 
   # scikit, scipy

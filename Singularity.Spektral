@@ -2,7 +2,6 @@ Bootstrap: docker
 From: tensorflow/tensorflow:1.13.1-gpu-py3
 
 # adapted from: https://github.com/marcc-hpc/tensorflow
-
 %environment
   # use bash as default shell
   SHELL=/bin/bash

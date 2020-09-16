@@ -57,4 +57,4 @@ From: tensorflow/tensorflow:1.13.1-gpu-py3
   git clone https://github.com/danielegrattarola/spektral.git
   cd spektral
   git checkout tf1
-  python setup.py install
+  python setup.py --upgrade install

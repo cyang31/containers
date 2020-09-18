@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: tensorflow/tensorflow:1.13.1-gpu-py3
+From: pytorch/pytorch:1.2-cuda10.0-cudnn7-runtime
 
 %environment
 # use bash as default shell
@@ -45,8 +45,6 @@ pip install --upgrade pip'
 pip install Pillow
 pip install matplotlib
 pip install monai
-pip install torch
-#pip install scikit-learn
 pip install nilearn
 pip install tqdm
 pip install h5py

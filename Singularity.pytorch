@@ -34,24 +34,25 @@ locale-gen en_US.UTF-8
 apt-get install -y git wget
 apt-get clean
 
+apt-get install -y python3-pip python3-dev
 # scikit, scipy
 apt-get install -y python3-scipy
 apt-get install -y python3-sklearn
 apt-get install -y python3-sklearn-lib
 
 # PIL (pillow for python 3)
-pip install Pillow
-pip install matplotlib
-pip install monai
-pip install nilearn
-pip install tqdm
-pip install h5py
-pip install pandas
+pip3 install Pillow
+pip3 install matplotlib
+pip3 install monai
+pip3 install nilearn
+pip3 install tqdm
+pip3 install h5py
+pip3 install pandas
 # SimpleITK
-pip install simpleitk
+pip3 install simpleitk
 
 #comet
-pip install comet_ml
+pip3 install comet_ml
 
 %runscript
 # executes with the singularity run command

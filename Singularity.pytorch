@@ -46,7 +46,7 @@ apt-get install -y python3-sklearn-lib
 pip3 install Pillow
 pip3 install matplotlib
 #pip3 install monai
-pip3 install nilearn
+#pip3 install nilearn
 #pip3 install tqdm
 pip3 install h5py
 pip3 install pandas

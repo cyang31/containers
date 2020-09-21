@@ -31,7 +31,6 @@ mkdir /scratch
 mkdir /scratch/dev
 mkdir /scratch/proc
 mkdir /scratch/sys
-
 mount --bind /dev /scratch/dev
 mount --bind /proc /scratch/proc
 mount --bind /sys /scratch/sys

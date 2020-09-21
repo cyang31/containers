@@ -28,12 +28,12 @@ chmod +x /environment
 
 # default mount paths
 mkdir /scratch
-mkdir /scratch/dev
-mkdir /scratch/proc
-mkdir /scratch/sys
-mount --bind /dev /scratch/dev
-mount --bind /proc /scratch/proc
-mount --bind /sys /scratch/sys
+#mkdir /scratch/dev
+#mkdir /scratch/proc
+#mkdir /scratch/sys
+#mount --bind /dev /scratch/dev
+#mount --bind /proc /scratch/proc
+#mount --bind /sys /scratch/sys
 
 # fix this issue: https://github.com/singularityware/singularity/issues/1182#issuecomment-381796545
 touch /usr/bin/nvidia-smi
@@ -53,12 +53,12 @@ apt-get install -y python3.6-dev
 apt-get install -y python3-scipy python3-sklearn python3-sklearn-lib
 apt-get clean
 
-pip install --upgrade pip
+pip3 install --upgrade pip
 #pip3 install Pillow
-pip install matplotlib
+pip3 install matplotlib
 #pip3 install nilearn
 #pip3 install tqdm
-pip install h5py
+pip3 install h5py
 
 pip install torch-scatter
 pip install torch-sparse

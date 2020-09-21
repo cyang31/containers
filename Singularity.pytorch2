@@ -28,11 +28,15 @@ chmod +x /environment
 
 # default mount paths
 mkdir /scratch
+mount --bind /dev /scratch/dev
+mount --bind /proc /scratch/proc
+mount --bind /sys /scratch/sys
 
 # fix this issue: https://github.com/singularityware/singularity/issues/1182#issuecomment-381796545
 touch /usr/bin/nvidia-smi
 
 apt-get update && apt-get -y install locales
+apt-get update && apt-get install -y --no-install-recommends apt-utils
 locale-gen en_US.UTF-8
 apt-get install -y git wget
 #apt-get clean

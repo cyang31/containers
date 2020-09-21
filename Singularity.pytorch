@@ -39,16 +39,18 @@ add-apt-repository ppa:deadsnakes/ppa
 apt-get update
 apt-get install -y python3.6
 apt-get install -y python3-pip
+apt-get install -y python-pip
+pip install --upgrade pip
 # scikit, scipy
 apt-get install -y python3-scipy python3-sklearn python3-sklearn-lib
 apt-get clean
 # PIL (pillow for python 3)
-pip3 install Pillow
-pip3 install matplotlib
-pip3 install monai
-pip3 install nilearn
-pip3 install tqdm
-pip3 install h5py
+pip install Pillow
+pip install matplotlib
+pip install monai
+pip install nilearn
+pip install tqdm
+pip install h5py
 
 #pip3 install torch-scatter==latest+cu101 -f https://pytorch-geometric.com/whl/torch-1.4.0.html
 #pip3 install torch-sparse==latest+cu101 -f https://pytorch-geometric.com/whl/torch-1.4.0.html
@@ -58,10 +60,10 @@ pip3 install h5py
 
 #pip install pandas
 # SimpleITK
-pip3 install simpleitk
+pip install simpleitk
 
 #comet
-pip3 install comet_ml
+pip install comet_ml
 
 %runscript
 # executes with the singularity run command

@@ -53,12 +53,12 @@ apt-get install -y python3.6-dev
 apt-get install -y python3-scipy python3-sklearn python3-sklearn-lib
 apt-get clean
 
-pip3 install --upgrade pip
+#pip3 install --upgrade pip
 #pip3 install Pillow
-pip3 install matplotlib
+pip install matplotlib
 #pip3 install nilearn
 #pip3 install tqdm
-pip3 install h5py
+pip install h5py
 
 pip install torch-scatter
 pip install torch-sparse

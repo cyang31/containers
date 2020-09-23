@@ -45,7 +45,6 @@ yum -y install python36u
 yum -y install python36u-devel
 yum -y install python36u-pip
 yum -y install gcc gcc-c++ numpy python-devel scipy
-#yum -y install python3-scikit-learn
 
 pip3.6 install --upgrade pip	
 pip3.6 install pyyaml

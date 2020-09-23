@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: centos:7
+From: nvidia/cuda:10.1-cudnn8-runtime-centos7
 
 %environment 
   SHELL=/bin/bash
@@ -46,20 +46,6 @@ yum -y install python36u-devel
 yum -y install python36u-pip
 yum -y install gcc gcc-c++ numpy python-devel scipy
 #yum -y install python3-scikit-learn
-
-wget https://developer.download.nvidia.com/compute/cuda/repos/rhel7/x86_64/cuda-repo-rhel7-10.1.105-1.x86_64.rpm
-yum -y localinstall cuda-repo-rhel7-10.1.105-1.x86_64.rpm
-yum -y install cuda
-echo 'export PATH=/usr/local/cuda-10.1/bin:$PATH' >> ~/.bashrc
-echo 'export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
-source ~/.bashrc
-
-CUDNN_TAR_FILE="cudnn-10.0-linux-x64-v7.5.0.56"
-wget https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v7.5.0.56/prod/10.0_20190219/cudnn-10.0-linux-x64-v7.5.0.56.tgz
-tar -xzvf ${CUDNN_TAR_FILE}
-cp -P cuda/include/cudnn.h /usr/local/cuda-10.1/include
-cp -P cuda/lib64/libcudnn* /usr/local/cuda-10.1/lib64/
-chmod a+r /usr/local/cuda-10.1/lib64/libcudnn*
 
 pip3.6 install --upgrade pip	
 pip3.6 install pyyaml

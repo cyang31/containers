@@ -44,7 +44,7 @@ export PATH=$PATH:/opt/anaconda3/bin
 
 # setup tensorflow environment
 # /opt/anaconda3/envs/tensorflow-env
-conda create -n -y torch-env python=3.6 anaconda
+conda create -n torch-env python=3.6 anaconda -y
 chmod +x /opt/anaconda3/bin/activate
 /opt/anaconda3/bin/activate torch-env
 conda -y install numpy ninja pyyaml mkl mkl-include setuptools cmake cffi typing_extensions future six requests dataclasses

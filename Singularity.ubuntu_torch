@@ -44,7 +44,7 @@ export PATH=$PATH:/opt/anaconda3/bin
 
 # setup tensorflow environment
 # /opt/anaconda3/envs/tensorflow-env
-conda create -n torch-env python=3.6 anaconda
+conda create -n torch-env python=3.6
 chmod +x /opt/anaconda3/bin/activate
 /opt/anaconda3/bin/activate torch-env
 conda update -n base conda

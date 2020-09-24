@@ -34,7 +34,7 @@ touch /usr/bin/nvidia-smi
 
 apt-get update && apt-get -y install locales
 locale-gen en_US.UTF-8
-apt-get -y --force-yes install vim wget bzip2
+apt-get -y --force-yes install vim wget bzip2 git
 
 # install anaconda
 # PREFIX=/opt/anaconda3

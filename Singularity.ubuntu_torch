@@ -74,6 +74,7 @@ pip install torch-geometric
 %runscript
 # executes with the singularity run command
 # delete this section to use existing docker ENTRYPOINT command
+echo "Welcome to Singularity Container pytorch ubuntu 16.04"
 exec source /opt/anaconda3/bin/activate torch-env
 
 %test

@@ -47,6 +47,7 @@ export PATH=$PATH:/opt/anaconda3/bin
 conda create -n torch-env python=3.6 anaconda
 chmod +x /opt/anaconda3/bin/activate
 /opt/anaconda3/bin/activate torch-env
+conda update -n base conda
 conda install numpy ninja pyyaml mkl mkl-include setuptools cmake cffi typing_extensions future six requests dataclasses
 conda install -c pytorch magma-cuda101
 git clone --recursive https://github.com/pytorch/pytorch

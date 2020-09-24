@@ -49,6 +49,7 @@ chmod +x /opt/anaconda3/bin/activate
 conda update -n base conda
 conda install numpy ninja pyyaml mkl mkl-include setuptools cmake cffi typing_extensions future six requests dataclasses
 conda install -c pytorch magma-cuda101
+conda install -c anaconda cmake
 git clone --recursive https://github.com/pytorch/pytorch
 cd pytorch
 # if you are updating an existing checkout

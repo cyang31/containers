@@ -48,6 +48,7 @@ pip install matplotlib
 pip install tqdm 
 pip install h5py
 pip install pandas
+pip install wrapt --upgrade --ignore-installed
 pip install comet_ml
 pip install pyyaml
 pip install simpleitk

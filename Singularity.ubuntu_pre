@@ -43,14 +43,14 @@ chmod +x /opt/anaconda3/bin/activate
 conda update -n base conda
 conda install numpy ninja pyyaml mkl mkl-include setuptools cmake cffi typing_extensions future six requests dataclasses
 conda install -c pytorch magma-cuda101
-conda install Pillow 
-conda install matplotlib 
-conda install tqdm 
-conda install h5py
-conda install pandas
-conda install simpleitk
-conda install comet_ml
-conda install pyyaml
+pip install Pillow 
+pip install matplotlib 
+pip install tqdm 
+pip install h5py
+pip install pandas
+pip install comet_ml
+pip install pyyaml
+pip install simpleitk
 
 %runscript
 # executes with the singularity run command

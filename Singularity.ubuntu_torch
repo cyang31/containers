@@ -47,10 +47,8 @@ conda create -n torch-env python=3.6
 chmod +x /opt/anaconda3/bin/activate
 /opt/anaconda3/bin/activate torch-env
 conda update -n base conda
-conda install -c conda-forge cxx-compiler
 conda install numpy ninja pyyaml mkl mkl-include setuptools cmake cffi typing_extensions future six requests dataclasses
 conda install -c pytorch magma-cuda101
-conda install -c anaconda cmake
 git clone --recursive https://github.com/pytorch/pytorch
 cd pytorch
 # if you are updating an existing checkout
@@ -77,7 +75,7 @@ pip install torch-geometric
 # executes with the singularity run command
 # delete this section to use existing docker ENTRYPOINT command
 echo "Welcome to Singularity Container pytorch ubuntu 16.04"
-exec source /opt/anaconda3/bin/activate torch-env
+#exec source /opt/anaconda3/bin/activate torch-env
 
 %test
 # test that script is a success

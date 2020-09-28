@@ -44,7 +44,7 @@ yum -y install gcc gcc-c++ numpy python-devel scipy
 #yum -y install python3-scikit-learn
 
 pip3.6 install --upgrade pip	
-pip3.6 install tensorflow-gpu
+pip3.6 install tensorflow-gpu==2.3.0
 pip3.6 install Pillow
 pip3.6 install matplotlib
 pip3.6 install tqdm

@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: centos:7
+From: nvidia/cuda:10.1-cudnn8-runtime-centos7
 
 %environment 
   SHELL=/bin/bash

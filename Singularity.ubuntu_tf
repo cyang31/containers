@@ -45,8 +45,8 @@ From: tensorflow/tensorflow:2.3.0-custom-op-gpu-ubuntu16
   pip install pandas
   pip install tqdm
   pip install h5py
-  pip uninstall numpy
-  pip install numpy
+  #pip uninstall numpy
+  #pip install numpy
   
 %runscript
   # executes with the singularity run command

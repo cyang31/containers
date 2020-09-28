@@ -42,6 +42,10 @@ yum -y install python36u-devel
 yum -y install python36u-pip
 yum -y install gcc gcc-c++ numpy python-devel scipy
 #yum -y install python3-scikit-learn
+yum -y install wget
+wget https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers/cuda-repo-rhel7-10-0-local-10.0.130-410.48-1.0-1.x86_64.rpm
+rpm -i cuda-repo-rhel7-10-0-local-10.0.130-410.48-1.0-1.x86_64.rpm
+yum -y install cuda
 
 pip3.6 install --upgrade pip	
 pip3.6 install tensorflow-gpu==2.3.0

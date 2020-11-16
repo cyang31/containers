@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: pytorch/pytorch:1.2-cuda10.0-cudnn7-runtime
+From: anibali/pytorch:1.4.0-cuda10.1-ubuntu16.04
 
 %environment
 # use bash as default shell
@@ -28,12 +28,6 @@ chmod +x /environment
 
 # default mount paths
 mkdir /scratch
-#mkdir /scratch/dev
-#mkdir /scratch/proc
-#mkdir /scratch/sys
-#mount --bind /dev /scratch/dev
-#mount --bind /proc /scratch/proc
-#mount --bind /sys /scratch/sys
 
 # fix this issue: https://github.com/singularityware/singularity/issues/1182#issuecomment-381796545
 touch /usr/bin/nvidia-smi
@@ -45,19 +39,16 @@ apt-get install -y git wget
 #apt-get clean
 
 apt-get install -y software-properties-common
-add-apt-repository ppa:deadsnakes/ppa
 apt-get update
-apt-get install -y python3.6-dev
 
 # scikit, scipy
 apt-get install -y python3-scipy python3-sklearn python3-sklearn-lib
 apt-get clean
 
-#pip3 install --upgrade pip
-#pip3 install Pillow
+pip install --upgrade pip
+pip install Pillow
 pip install matplotlib
-#pip3 install nilearn
-#pip3 install tqdm
+pip install tqdm
 pip install h5py
 
 pip install torch-scatter
@@ -66,12 +57,13 @@ pip install torch-cluster
 pip install torch-spline-conv
 pip install torch-geometric
 
-#pip install pandas
-# SimpleITK
+pip install pandas
 pip install simpleitk
-
-#comet
 pip install comet_ml
+
+git clone https://github.com/facebookresearch/mmf.git
+cd mmf
+pip install --editable .
 
 %runscript
 # executes with the singularity run command

@@ -38,26 +38,16 @@ locale-gen en_US.UTF-8
 apt-get install -y git wget
 apt-get update
 
-apt-get install -y software-properties-common
-add-apt-repository ppa:deadsnakes/ppa
-apt update
-apt install -y python3.7
-apt install -y python3.7-dev
-wget https://bootstrap.pypa.io/get-pip.py
-python3.7 get-pip.py
+conda install -c anaconda pip
+conda install scikit-learn
+conda install Pillow
+conda install matplotlib
+conda install tqdm
+conda install h5py
 
-apt-get install -y python3-scipy python3-sklearn python3-sklearn-lib
-apt-get clean
-
-pip install --upgrade pip
-pip install Pillow
-pip install matplotlib
-pip install tqdm
-pip install h5py
-
-pip install pandas
-pip install simpleitk
-pip install comet_ml
+conda install pandas
+conda install simpleitk
+conda install comet_ml
 
 git clone https://github.com/facebookresearch/mmf.git
 cd mmf

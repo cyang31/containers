@@ -48,19 +48,19 @@ apt-get install -y python3-pip
 apt-get install -y python3-scipy python3-sklearn python3-sklearn-lib
 apt-get clean
 
-pip3 install --upgrade pip3
-pip3 install Pillow
-pip3 install matplotlib
-pip3 install tqdm
-pip3 install h5py
+pip3 install --upgrade pip
+pip install Pillow
+pip install matplotlib
+pip install tqdm
+pip install h5py
 
-pip3 install pandas
-pip3 install simpleitk
-pip3 install comet_ml
+pip install pandas
+pip install simpleitk
+pip install comet_ml
 
 git clone https://github.com/facebookresearch/mmf.git
 cd mmf
-pip3 install --editable .
+pip install --editable .
 
 %runscript
 # executes with the singularity run command

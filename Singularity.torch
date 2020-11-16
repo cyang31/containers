@@ -36,10 +36,13 @@ apt-get update && apt-get -y install locales
 apt-get update && apt-get install -y --no-install-recommends apt-utils
 locale-gen en_US.UTF-8
 apt-get install -y git wget
-#apt-get clean
-
 apt-get install -y software-properties-common
 apt-get update
+apt-get install -y python3-dev
+apt-get install -y python3-pip
+
+#apt-get update
+#apt-get clean
 
 # scikit, scipy
 apt-get install -y python3-scipy python3-sklearn python3-sklearn-lib
@@ -50,12 +53,6 @@ pip install Pillow
 pip install matplotlib
 pip install tqdm
 pip install h5py
-
-pip install torch-scatter
-pip install torch-sparse
-pip install torch-cluster
-pip install torch-spline-conv
-pip install torch-geometric
 
 pip install pandas
 pip install simpleitk

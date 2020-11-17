@@ -41,12 +41,11 @@ apt-get install -y git wget
 apt-get install -y software-properties-common
 add-apt-repository ppa:deadsnakes/ppa 
 apt-get update
-apt-get install -y python3.7
+apt-get install -y python3.7-dev
 #apt-get install -y python3-pip
 wget https://bootstrap.pypa.io/get-pip.py
 python3.7 get-pip.py
 
-#apt-get install -y python3-pip
 # scikit, scipy
 apt-get install -y python3-sklearn python3-sklearn-lib
 apt-get clean

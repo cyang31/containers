@@ -52,12 +52,11 @@ apt-get install -y python3-sklearn python3-sklearn-lib
 apt-get clean
 
 pip3 install --upgrade pip
-pip3 install Pillow
+pip install Pillow
 pip install matplotlib
 pip install tqdm
 pip install h5py
 pip install pandas
-pip install simpleitk
 pip install comet_ml
 git clone https://github.com/facebookresearch/mmf.git
 cd mmf

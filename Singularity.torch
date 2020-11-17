@@ -32,7 +32,7 @@ mkdir /scratch
 # fix this issue: https://github.com/singularityware/singularity/issues/1182#issuecomment-381796545
 touch /usr/bin/nvidia-smi
 rm -rf /home/user/miniconda
-
+rm -rf /usr/local/lib/python3.5
 apt-get update && apt-get install -y apt-utils
 apt-get update && apt-get install -y locales
 locale-gen en_US.UTF-8
@@ -41,7 +41,7 @@ apt-get install -y git wget
 apt-get install -y software-properties-common
 add-apt-repository ppa:deadsnakes/ppa 
 apt-get update
-apt-get install -y python3.6
+apt-get install -y python3.7
 apt-get install -y python3-pip
 #wget https://bootstrap.pypa.io/get-pip.py
 #python3.6 get-pip.py

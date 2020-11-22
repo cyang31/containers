@@ -46,7 +46,7 @@ apt-get install -y python3.7-dev
 wget https://bootstrap.pypa.io/get-pip.py
 python3.7 get-pip.py
 apt-get install -y build-essential 
-
+apt-get install -y vim
 # scikit, scipy
 # apt-get install -y python3-sklearn python3-sklearn-lib
 apt-get clean

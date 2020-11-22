@@ -72,6 +72,9 @@ git clone https://github.com/facebookresearch/mmf.git
 cd mmf
 pip install --editable .
 
+cd ..
+pip install git+https://github.com/aleju/imgaug.git
+
 %runscript
 # executes with the singularity run command
 # delete this section to use existing docker ENTRYPOINT command

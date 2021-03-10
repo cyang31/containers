@@ -54,6 +54,10 @@ From: tensorflow/tensorflow:2.3.0-custom-op-gpu-ubuntu16
   pip install tensorflow-addons
   pip install imgaug
   
+  pip uninstall numpy
+  pip install numpy
+
+
 %runscript
   # executes with the singularity run command
   # delete this section to use existing docker ENTRYPOINT command

@@ -35,9 +35,12 @@ From: tensorflow/tensorflow:2.3.0-custom-op-gpu-ubuntu16
   apt-get clean
 
   # scikit, scipy
-  apt-get install -y python3-scipy python3-sklearn python3-sklearn-lib
+  #apt-get install -y python3-scipy python3-sklearn python3-sklearn-lib
 
   pip install --upgrade pip
+  
+  pip install -U scikit-learn
+  
   pip install Pillow
   pip install matplotlib
   pip install simpleitk

@@ -39,6 +39,9 @@ From: tensorflow/tensorflow:2.3.0-custom-op-gpu-ubuntu16
 
   pip install --upgrade pip
   
+  pip uninstall -y numpy
+  pip install numpy
+  
   pip install -U scikit-learn
   
   pip install Pillow
@@ -53,13 +56,8 @@ From: tensorflow/tensorflow:2.3.0-custom-op-gpu-ubuntu16
   pip install tf-explain
   pip install tensorflow-addons
   pip install imgaug
-  
-  pip uninstall -y numpy
-  pip uninstall -y numpy
-  pip uninstall -y numpy
-  pip uninstall -y numpy
-  pip uninstall -y numpy
-  pip install numpy
+ 
+
 
 
 %runscript

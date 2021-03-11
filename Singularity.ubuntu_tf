@@ -55,6 +55,7 @@ From: tensorflow/tensorflow:2.3.0-custom-op-gpu-ubuntu16
   pip install imgaug
   
   pip uninstall -y numpy
+  pip uninstall -y numpy
   pip install numpy
 
 

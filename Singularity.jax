@@ -34,6 +34,10 @@ apt-get update && apt-get -y install locales
 locale-gen en_US.UTF-8
 apt-get -y --force-yes install vim wget bzip2 git
 apt-get -y install build-essential
+apt-get -y install software-properties-common
+add-apt-repository ppa:deadsnakes/ppa
+apt-get update
+apt-get -y --force-yes install python3.8
 
 pip install --upgrade pip
 pip install Pillow 

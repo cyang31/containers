@@ -56,7 +56,7 @@ From: tensorflow/tensorflow:2.3.0-custom-op-gpu-ubuntu16
   pip install tf-explain
   pip install tensorflow-addons
   pip install imgaug
-  pip install einops
+  #pip install einops
 
 %runscript
   # executes with the singularity run command

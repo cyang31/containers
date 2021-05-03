@@ -53,6 +53,7 @@ apt-get clean
 
 pip3 install --upgrade pip
 pip install Pillow
+pip install simpleitk
 pip install matplotlib
 pip install tqdm
 pip install h5py
@@ -74,6 +75,7 @@ pip install --editable .
 
 cd ..
 pip install git+https://github.com/aleju/imgaug.git
+pip install einops
 
 %runscript
 # executes with the singularity run command
